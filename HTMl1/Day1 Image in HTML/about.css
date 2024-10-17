@@ -1,0 +1,89 @@
+/* Styling for About Section */
+#about {
+    background-color: #e0cccc;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 36px;
+    color: #0e0b13;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #070505;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.about-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #e4e2e2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p,
+.feature ul {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.feature ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.feature ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.feature ul li:before {
+    content: "✔";
+    color: #4caf50;
+    position: absolute;
+    left: -20px;
+    font-size: 18px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about h1 {
+        font-size: 28px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    .feature p,
+    .feature ul {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+nav {
+    background-color: #060b95;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    color: white;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #9f0d2a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: white;
+    color: #060b95;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fc5c7d;
+    color: white;
+}
+
+/* About Section */
+.about,
+.schedule,
+.team,
+.register {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2,
+.schedule h2,
+.team h2,
+.register h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #060b95;
+}
+
+/* Schedule */
+.schedule ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.schedule ul li {
+    background-color: #c4babf;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team-members {
+    display: flex;
+    justify-content: center;
+}
+
+.team-members .member {
+    margin: 20px;
+    text-align: center;
+}
+
+.team-members img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-members h3 {
+    margin-bottom: 5px;
+}
+
+/* Registration Section */
+.register p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #060b95;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

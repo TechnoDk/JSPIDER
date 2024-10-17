@@ -1,0 +1,118 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    color: #333;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #060b95;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fc5c7d;
+    border-radius: 5px;
+}
+
+/* Day Schedule Section */
+.day-schedule {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 80px auto;
+    /* Space below fixed navbar */
+    text-align: center;
+}
+
+.day-schedule h1 {
+    font-size: 32px;
+    color: #6a82fb;
+    margin-bottom: 20px;
+}
+
+.schedule-details h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.schedule-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedule-details ul li {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.schedule-details ul li:hover {
+    background-color: #eaeaea;
+}
+
+/* Questions Section */
+.questions-section {
+    margin-top: 30px;
+}
+
+.questions-section h2 {
+    margin-top: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #060b95;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

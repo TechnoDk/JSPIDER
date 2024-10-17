@@ -1,0 +1,49 @@
+.Check git version
+ i. git -v (git --version)
+ ii. git (library)
+
+# Basic (Global Configuration)Commands  for entering Vs code 
+# Global Configuration:- we can access every where in your system so globally authenticate and  set  up some basic details .
+1. git config --global user.name "deepak"
+2. git config --global user.email "dkdear01@gmail.com"
+3.git config --global  core.editor  "code(vscode)  --wait"
+4. git config --global core.autocrlf  true
+#Check we write then so use below
+5. git config --global -e 
+# Edit Global configuration
+file:
+git config --global -
+
+#12:23 01-10-2024
+
+Extension 
+1.Git Graph
+2.Gitlens
+3.git Blame
+4.Git-autoconfig.
+5. Github theme
+
+
+# Local Configuration
+
+1. git init(only once)
+2.git config user.name
+
+dialog.txt -U(u means untrack)
+untracked to changes track and one stage move then U(untrack) to A(added)
+
+#Git Commands
+1. git init
+2. git add  dialog.txt (filename.extension)
+3. git commit -m  "save dialog"
+#m(message)   and commit message we can write 
+
+#Commit: 84ef9d723fe509c5e318f6b31f831aad7a072dd7
+Parents: None
+Author: Deepak Kumar Sah <dkdear11@gmail.com>
+Committer: Deepak Kumar Sah <dkdear11@gmail.com>
+Date: Tue Oct 01 2024 12:55:20 GMT+0530 (India Standard Time)
+ 
+
+first commit
+ 

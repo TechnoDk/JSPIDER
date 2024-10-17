@@ -1,0 +1,76 @@
+/* Styling for Service Section */
+#services {
+    background-color: #b6c576;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#services p {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-display:bold;
+    color: #230bdc;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.2;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#services ul li {
+    background-color: #e5e7f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#services ul li h3 {
+    font-size: 26px;
+    color: #e90a166a;
+    margin-bottom: 10px;
+}
+
+#services ul li p {
+    font-size: 20px;
+    color: hsl(0, 33%, 2%);
+    line-height: 1.3;
+}
+
+#services ul li:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #services ul li {
+        padding: 20px;
+    }
+
+    #services h1 {
+        font-size: 28px;
+    }
+
+    #services ul li h3 {
+        font-size: 20px;
+    }
+
+    #services ul li p {
+        font-size: 14px;
+    }
+}

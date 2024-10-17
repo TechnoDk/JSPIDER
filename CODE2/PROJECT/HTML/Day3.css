@@ -1,0 +1,127 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    color: #333;
+    padding-top: 60px;
+    /* Space for fixed navbar */
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #060b95;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fc5c7d;
+    border-radius: 5px;
+}
+
+/* Schedule Section */
+.schedule {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.schedule h2 {
+    text-align: center;
+    color: #333;
+}
+
+.schedule-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedule-item li {
+    padding: 10px 0;
+}
+
+/* Nomination Form */
+.nomination-container {
+    margin-top: 30px;
+}
+
+.nomination-container h3 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #6a82fb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #fc5c7d;
+}
+
+/* Footer */
+footer {
+    background-color: #060b95;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+}

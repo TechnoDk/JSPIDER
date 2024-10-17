@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Unordered List</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
+      }
+
+      .element {
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+        width: 390px;
+        background-color: azure;
+      }
+      .element2 {
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+        width: 350px;
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="element">
+      <center>
+        <h1>Nested Unordered List</h1>
+      </center>
+      <ul>
+        <li>
+          <h3>Programming Langauges</h3>
+
+          <ul type="circle">
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </li>
+        <li><h3>DSA</h3></li>
+        <ul type="circle">
+          <li>Array</li>
+          <li>Linked List</li>
+          <li>Stack</li>
+          <li>Queue</li>
+          <li>Trees</li>
+          <li>Graphs</li>
+        </ul>
+        <li><h3>Web Technologies</h3></li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>
+          JavaScript
+          <ul type="square">
+            <li>React</li>
+            <li>Angular</li>
+            <li>Vue</li>
+          </ul>
+        </li>
+        <li><h3>Bootstrap</h3></li>
+      </ul>
+    </div>
+    <!-- Order List -->
+    <div class="element2">
+      <center>
+        <h1>Nested Ordered List</h1>
+      </center>
+      <ol>
+        <li>
+          <h3>Programming Langauges</h3>
+
+          <ol>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ol>
+        </li>
+        <li><h3>DSA</h3></li>
+        <ol>
+          <li>Array</li>
+          <li>Linked List</li>
+          <li>Stack</li>
+          <li>Queue</li>
+          <li>Trees</li>
+          <li>Graphs</li>
+        </ol>
+        <li><h3>Web Technologies</h3></li>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>
+            JavaScript
+            <ol>
+              <li>React</li>
+              <li>Angular</li>
+              <li>Vue</li>
+            </ol>
+          </li>
+        </ol>
+
+        <li><h3>Bootstrap</h3></li>
+      </ol>
+    </div>
+  </body>
+</html>

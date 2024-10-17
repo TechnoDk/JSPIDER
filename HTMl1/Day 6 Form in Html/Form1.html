@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Creation</title>
+    <style>
+      body {
+        background-color: rgb(221, 177, 121);
+      }
+      td {
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 12px;
+      }
+      table {
+        border-collapse: separate;
+        margin-top: 20px;
+      }
+      form {
+        border: 2px solid black;
+        border-radius: 12px;
+      }
+      sup {
+        color: red;
+      }
+      input[type="text"] {
+        border: 2px solid black;
+        font-family: "Times New Roman", Times, serif;
+      }
+      input[type="email"] {
+        border: 2px solid black;
+      }
+      input[type="password"] {
+        border: 2px solid black;
+      }
+      input[type="tel"] {
+        border: 2px solid black;
+      }
+
+      .btn {
+        margin-left: 20px;
+        border: 2px solid mediumblue;
+        background-color: rgb(170, 206, 11);
+      }
+      .btn1 {
+        border: 2px solid rgb(239, 231, 13);
+        margin-right: 20px;
+        background-color: brown;
+        font-size: medium;
+        font-family: "Times New Roman", Times, serif;
+      }
+      select {
+        background-color: #f0ebeb;
+        border: 2px solid black;
+        font-family: "Times New Roman", Times, serif;
+        border-radius: calc(30px);
+      }
+      textarea {
+        background-color: lemonchiffon;
+        border: 2px solid black;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td align="center">
+          <form action="#">
+            <h2 style="color: crimson">Personal Details</h2>
+            Name <sup>*</sup>
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="user-name"
+              required
+            />
+            <br /><br />
+            Email <sup>*</sup
+            ><input
+              type="email"
+              placeholder="abc@gmail.com"
+              name="user-email"
+              required
+            />
+            <br /><br />
+            Password <sup>*</sup>
+            <input
+              type="password"
+              required
+              name="user-password"
+              placeholder="At least 8 character"
+            />
+            <br /><br />
+            Contact no.
+            <input type="tel" placeholder="+91-9638527410" name="user-mob" />
+            <br /><br />
+            Gender <br />
+            <input type="radio" name="gender" checked />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Other
+
+            <h2 style="color: crimson">Educational Details</h2>
+            Degree:-
+            <select name="degree" id="degree">
+              <option selected>--Select Degree--</option>
+              <option value="">B.Tech</option>
+              <option value="">B.Sc</option>
+              <option value="">B.com</option>
+              <option value="">B.A</option></select
+            ><br /><br />
+            Passing Year
+            <select name="yop" id="yop">
+              <option selected>--Select YOP--</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="">2023</option>
+              <option value="">2022</option>
+              <option value="">2021</option>
+              <option value="">2020</option>
+              <option value="">2019</option>
+              <option value="">2018</option>
+              <option value="">2017</option>
+            </select>
+            <br /><br />
+            Hobbies: <br />
+            <input type="checkbox" checked />Playing
+            <input type="checkbox" />Dancing <input type="checkbox" />Singing
+            <input type="checkbox" />Reading <br />
+
+            <input type="checkbox" />Learning <input type="checkbox" />Typing
+            <br /><br />
+            <h3 style="color: crimson">Address</h3>
+            <textarea
+              name="user-address"
+              placeholder="Write Address"
+              rows="5"
+              cols="44"
+            ></textarea>
+            <br /><br />
+            Attach Resume :- <input type="file" multiple accept="pdf" />
+            <br /><br />
+
+            <button class="btn1" type="reset">Cancel</button>
+            <button class="btn" type="submit">SUBMIT</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <!-- <div class="main" style="background-color: aqua;"> -->
+
+    <!-- </div> -->
+  </body>
+</html>

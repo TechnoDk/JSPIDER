@@ -1,0 +1,6 @@
+class dk{
+ 
+Public Void Main(){
+       system.out.print("Hello World");
+}
+}

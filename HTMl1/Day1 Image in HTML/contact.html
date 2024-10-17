@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="footer.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #c1c74f;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      nav {
+        background-color: #891e82;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-container a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-container a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+      }
+
+      .nav-container a.active {
+        background-color: #4caf50;
+        border-radius: 5px;
+      }
+
+      /* Contact Form Styling */
+      .contact-form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        padding: 20px;
+      }
+
+      .contact-form {
+        background-color: #dad0d0;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .contact-form h2 {
+        text-align: center;
+        color: #120a0a;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #0a3090;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #0c0a0a;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        border-color: #4caf50;
+      }
+
+      .contact-form input[type="submit"] {
+        background-color: #4caf50;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Style for placeholders */
+      ::placeholder {
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICE</a>
+        <a href="contact.html" class="active">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <h2>Contact Us</h2>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2024 Powered by Deepak</p>
+    </footer>
+  </body>
+</html>
