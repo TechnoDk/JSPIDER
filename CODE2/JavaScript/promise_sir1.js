@@ -575,12 +575,12 @@
 //   ename: "deepak",
 //   company: "Stank",
 // };
-// console.log(data);
+// console.log(data);  //
 
 //JSON.STRINGIFY() : CONVERT JS OBJECTS TO JSON AND RETURNS IT
 
 // let jsonData = JSON.stringify(data);
-// console.log(jsonData);
+// console.log(jsonData);  // String return
 
 // JSON.PARSE(): converts json to js object and return it
 
@@ -604,18 +604,19 @@
 // });
 
 //ASYNC AND AWAIT
-async function fetchData() {
-  let resp = await fetch("https://fakestoreapi.com/products");
-  let products = await resp.json();
-  console.log(products);
-  displayData(products);
-}
-fetchData();
+// async function fetchData() {
+//   let resp = await fetch("https://fakestoreapi.com/products");
+//   let products = await resp.json();
+//   console.log(products);
+//   displayData(products);
+// }
+// fetchData();
 
-function displayData(allproducts) {
-  console.log(allproducts);
-  allproducts.map((product) => {
-    document.write(`<h1>${product.title}</h1>`);
-  });
-}
+// function displayData(allproducts) {
+//   console.log(allproducts);
+//   allproducts.map((product) => {
+//     document.write(`<h1>${product.title}</h1>`);
+//   });
+// }
 //Call back hell what do you mean by callBack Hell ?
+

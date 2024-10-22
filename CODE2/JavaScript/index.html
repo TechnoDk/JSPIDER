@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <!-- defer then use to head  tag under script  tag so use defer then target it otherwise not
+    target , second option  we wann use body tag after html ,if before html code use of script tag then null will return so after HTML Code use <script>
+
+    </script>
+    as like <script src="./dom.js" defer></script>
+    
+    <tag class="--"></tag>-->
+    <!-- HTMLCollection:- it is impure array 
+     to convert impure array to pure array then use 
+      let pureArray=Array.from(contentcontainer); -->
+       <!--  check array is pure or not -->
+         <!-- console.log(Array.isArray(contentcontainer)) -->
+    
+  </head> 
   <body>
     <p>
       <h2>
       <center>
         <mark>JavaScript Class</mark>
       </center>
-      </h2>
+      <!-- </h2>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatem
       placeat debitis reiciendis maxime quae totam vitae obcaecati iste ducimus
       iure, qui fugit saepe neque facilis pariatur dicta veniam fugiat quis
@@ -26,7 +39,7 @@
       accusamus totam nulla minus omnis commodi recusandae earum consequuntur
       doloribus, exercitationem ea atque, cum quod facilis? Deleniti, nobis!
       Neque illo, reprehenderit vitae aliquid quo excepturi ducimus? Doloremque.
-    </p>
+    </p> -->
     <!-- *{
     margin: 0;
     padding: 0;
@@ -48,8 +61,50 @@ h1{
     font-style: unset;
     
 } -->
+
+<h1>Welcome to the Dom Environment</h1>
+ <!-- id -->
+<section id="section1"> target using id </section>
+
+
+ <!-- className -->
+<article class="content"> target using classmate</article>
+<p class="content">target using classmate </p>
+<span class="content">target using classmate</span>
+
+
+<footer class="foot"> i am footer</footer>
+<div>class1</div>
+<div> class2</div>
+<div> class3</div>
+<div> class 4</div>
+
+<button onclick="clickMe()"> clickMe</button>
+<button ondblclick="double()">Double Click</button> <br><br>
+<button onmouseenter="cursurEnter()">Enter Cursor</button>
+<button onmouseleave="cursurLeave()"> Mouse Leave</button>
+<br>
+<br>
+<hr>
+<p onmousemove="cursurMove()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto itaque mollitia atque, tempore non incidunt quibusdam praesentium nemo beatae asperiores necessitatibus adipisci porro sint quaerat sequi, sit natus tempora similique est. Neque atque qui saepe soluta iure fugit, officiis id iste delectus eligendi. Dolorum eveniet odit voluptate, unde voluptatibus quo sint at veritatis. Ad quasi ea, magni aliquam mollitia perspiciatis distinctio? Assumenda optio libero commodi ab natus error, quibusdam blanditiis dolorem laboriosam. Doloremque saepe sunt rerum consequuntur a perferendis est ipsa. Maxime sapiente voluptas doloribus error reiciendis possimus corporis distinctio aspernatur! In voluptas aspernatur architecto rem perspiciatis vel explicabo?</p>
+
+<!-- <form >
+<input type="text" placeholder="Username"  onkeydown="keyPressed()" onkeyup="keyReleased()" ><br><br>
+<input type="text" placeholder="Password" onkeydown="keyPressed()" onkeyup="keyReleased()"> <br><br>
+
+<input type="submit"> -->
+
+
+<!-- </form> -->
+ <form onsubmit="formSubmit()"
+>
+<input type="text" placeholder="email" id="email"> <br>
+<input type="text" placeholder="Password" id="Password"> <br>
+<input type="submit">
+
+</form>
   </body>
   <!-- <script src="/func1.js"></script> -->
   <!-- <script src="./Promises.js"></script> -->
-   <script src="./promise_sir1.js"></script>
+   <script src="./dom2.js"></script>
 </html>

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
 }
-
+/* 
 #card {
     border: 2px solid rgb(219, 17, 17);
     width: 60%;
@@ -22,5 +22,11 @@ h1 {
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
     font-style: unset;
+
+} */
+
+#item{
+    background-color: blue;
+    border: 2px solid black;
 
 }
