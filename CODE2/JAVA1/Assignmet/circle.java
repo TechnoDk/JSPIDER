@@ -3,14 +3,14 @@ import java.math.*;
 
 public class circle {
 
-    // double radius;
+    double radius;
 
-    // public void setValue( double radius) {
-    // this.radius = radius;
-    // }
-
-    Scanner sc = new Scanner(System.in);
-    double radius = sc.nextDouble();
+    public void setValue() {
+        // this.radius = radius;
+        // }
+        Scanner sc = new Scanner(System.in);
+        radius = sc.nextDouble();
+    }
 
     public void getDetails() {
         System.out.println("+--------+----------+-----------+");
