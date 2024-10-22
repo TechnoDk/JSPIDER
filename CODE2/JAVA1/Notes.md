@@ -7,7 +7,7 @@
 - Switch case
 - Loop
 
-#################
+
 
 - Pattern Program
 - number Program
@@ -114,10 +114,7 @@ sop(045>100);//false
 3. Decimal
 4. Hexadecimal
 
-
-
-
-1. Binary Representation:- If a number is written by using only two digits 0,1 then it is called Binary Representation.
+5. Binary Representation:- If a number is written by using only two digits 0,1 then it is called Binary Representation.
 
 A Binary number starts 0B or 0b and written as 2's Complement form.
 
@@ -125,30 +122,27 @@ e.g:- 0b10101011;
 0B101011010;
 0b101024; not right.
 
-
-
-
 2. Octal Representation:- If a number is written by using 8 digits from 0-7 then it is called Octal Representation.
-An Octal start from 0 and it is written in 8's Complement form.
+   An Octal start from 0 and it is written in 8's Complement form.
 
 e.g.,:-(0354)base 8
-      (0358) base 8 ; not right.
+(0358) base 8 ; not right.
 
-3. Decimal Representation:- If a number is not prefix by anything  it is called  a Decimal number.
-A Decimal number is written in 10's Complement .
+3. Decimal Representation:- If a number is not prefix by anything it is called a Decimal number.
+   A Decimal number is written in 10's Complement .
 
 4. Hexadecimal :- If a number is prefix by 0X or 0x then it is called a Hexadecimal number.
-If  Hexadecimal number 16 digits are used from 0-9 & A-F.
-Hexadecimal number is written in 16's Complement form.
-eg., 0x325 base 16 = 805 base 10;
+   If Hexadecimal number 16 digits are used from 0-9 & A-F.
+   Hexadecimal number is written in 16's Complement form.
+   eg., 0x325 base 16 = 805 base 10;
 
+# Logical Operator:-
 
-# Logical Operator:- 
 Logical operates are used to take boolean value and gives boolean result.
 They are Logical AND(&&) ,Logical OR (||),Logical NOT(!).
 
-1. Logical AND:- It takes two boolean operand  if both are true then it gives true otherwise it will give false.
-true-true:true, otherwise all result false.
+1. Logical AND:- It takes two boolean operand if both are true then it gives true otherwise it will give false.
+   true-true:true, otherwise all result false.
 
 & :- Strictly checked both operand.it will execute both operands to give result.
 
