@@ -2,16 +2,16 @@ public class circleDrive {
 
     public static void main(String[] args) {
 
-        circleC c1 = new circleC();
+        circle c1 = new circle();
         System.out.println("Enter Radius 1 :- ");
 
-        circleC c2 = new circleC();
+        circle c2 = new circle();
         System.out.println("Enter Radius 2:- ");
 
-        circleC c3 = new circleC();
+        circle c3 = new circle();
         System.out.println("Enter Radius 3 :- ");
 
-        circleC c4 = new circleC();
+        circle c4 = new circle();
         System.out.println("Enter Radius 4:- ");
         c1.setValue();
         c2.setValue();
