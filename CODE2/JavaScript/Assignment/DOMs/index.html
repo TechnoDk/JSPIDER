@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Creation</title>
+    <style>
+      body {
+        background-color: rgb(221, 177, 121);
+      }
+      form {
+        border: 2px solid black;
+        border-radius: 12px;
+      }
+      sup {
+        color: red;
+      }
+      input[type="text"] {
+        border: 2px solid black;
+        font-family: "Times New Roman", Times, serif;
+      }
+      input[type="email"] {
+        border: 2px solid black;
+      }
+      input[type="password"] {
+        border: 2px solid black;
+      }
+
+      nav {
+        border: 5px solid hotpink;
+      }
+      div {
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <img src="BPMCE.jpg" alt="picsCollege" height="200px" width="150px" />
+      </nav>
+      <form onsubmit="formSubmit(event)" >
+        <h2 style="color: crimson">SIGN UP</h2>
+        Name <sup>*</sup>
+        <input type="text" id="user" name="user-name" />
+        <br /><br />
+        Email <sup>*</sup
+        ><input
+          type="email"
+          id="email"
+          placeholder="abc@gmail.com"
+          name="user-email"
+        
+        />
+        <br /><br />
+        Password <sup>*</sup>
+        <input
+          type="password"
+          id="password"
+          
+          name="user-password"
+          placeholder="At least 8 character"
+        />
+        <br />
+        <br />
+
+        <!-- <button class="btn1" type="reset">Cancel</button> -->
+
+        <br />
+        <!-- <input type="submit" /> -->
+
+        <button class="btn"  type="submit" onclick="pushData()">SUBMIT</button>
+      </form>
+      <button type="submit" onclick="showdata()">showdata</button>
+    </div>
+    <!-- <div class="main" style="background-color: aqua;"> -->
+
+    <!-- </div> -->
+    <script src="./index.js"></script>
+  </body>
+</html>

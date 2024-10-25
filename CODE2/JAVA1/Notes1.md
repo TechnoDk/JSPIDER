@@ -148,7 +148,8 @@ They are Logical AND(&&) ,Logical OR (||),Logical NOT(!).
 
 # Date:- 23-10-2024(wednesday)
 
-# Logical  OR :-
+# Logical OR :-
+
 Logical OR takes two boolean operands and if atleast one operand is true then it will true otherwise false.
 T-T:T
 T-F:T
@@ -159,17 +160,21 @@ F-F:F
 | (single Pipeline):-it will execute both operand always.
 
 # Logical Not:-
+
 Logical Not takes one boolean operand and it changes the boolean state.
 
 T-F
 F-T
-
 
 # Conditional Operator:-
 
 Conditional operator takes 3 operand where operand one must be boolean operand
 if operand one is true 00h00..0
 
-IF operand one is true then  operand two is executed otherwise operand three is executed.
- SYNTAX:(OP1?OP2:OP3);
- 
+IF operand one is true then operand two is executed otherwise operand three is executed.
+SYNTAX:(OP1?OP2:OP3);
+
+# Date:-24-10-2024(Thursday)
+
+# Flow Control Statement:-
+

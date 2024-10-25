@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class bigThreeNum {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
         int a;
         int b;
@@ -13,7 +13,7 @@ public class bigThreeNum {
         b = sc.nextInt();
         System.out.println("Enter Num3:");
         c = sc.nextInt();
-        int answer = (a > b) ? (a > c ? a : c) : (b > c ? b : c); ;
+        int answer = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
         System.out.println(answer);
 
     }

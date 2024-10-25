@@ -25,9 +25,15 @@ function keyReleased() {
   console.log("key Released");
 }
 
-function formSubmit() {
-    let email = document.getElementById("email")
-    let Password = document.getElementById("Password")
-    console.log(email,Password);
-    
+function formSubmit(e) {
+  e.preventDefault();
+  console.log(e);
+
+  // let email = document.getElementById("email");
+  // let Password = document.getElementById("Password");
+  // console.log({ email: email.value, Password: Password.value });
+
+  let email = document.getElementById("email").value;
+  let Password = document.getElementById("Password").value;
+  console.log({ email, Password });
 }
