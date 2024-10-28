@@ -8,6 +8,13 @@ html {
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
 }
+nav{
+    background-size: auto;
+    background-color: #ff58e6;
+    font-size:x-large ;
+    flex-wrap: wrap-reverse;
+    
+}
 
 .container {
     position: absolute;
