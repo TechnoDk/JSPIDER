@@ -39,7 +39,7 @@
       <nav>
         <img src="BPMCE.jpg" alt="picsCollege" height="200px" width="150px" />
       </nav>
-      <form onsubmit="formSubmit(event)" >
+      <form onsubmit="formSubmit(event)">
         <h2 style="color: crimson">SIGN UP</h2>
         Name <sup>*</sup>
         <input type="text" id="user" name="user-name" />
@@ -50,14 +50,12 @@
           id="email"
           placeholder="abc@gmail.com"
           name="user-email"
-        
         />
         <br /><br />
         Password <sup>*</sup>
         <input
           type="password"
           id="password"
-          
           name="user-password"
           placeholder="At least 8 character"
         />
@@ -69,13 +67,19 @@
         <br />
         <!-- <input type="submit" /> -->
 
-        <button class="btn"  type="submit" onclick="pushData()">SUBMIT</button>
+        <button class="btn" type="submit" onclick="pushData()">SUBMIT</button>
       </form>
       <button type="submit" onclick="showdata()">showdata</button>
     </div>
+    <h1>Get Month Name by Number</h1>
+    <p>Enter a month number (1-12):</p>
+    <input type="number" id="monthInput" min="1" max="12" />
+    <button onclick="showMonthName()">Get Month Name</button>
+
+    <p id="monthNameDisplay"></p>
     <!-- <div class="main" style="background-color: aqua;"> -->
 
     <!-- </div> -->
-    <script src="./index.js"></script>
+    <script src="./objectMap.js"></script>
   </body>
 </html>
