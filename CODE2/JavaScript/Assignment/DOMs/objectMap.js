@@ -13,7 +13,7 @@ const monthNames = {
   12: "December",
 };
 function getMonthName(monthNumber) {
-  return monthNames[monthNumber] || "unknown";
+  return monthNames[monthNumber] || "Unknown";
 }
 console.log(getMonthName(3));
 function showMonthName() {

@@ -1,7 +1,7 @@
 function getMonthName(monthNumber) {
   switch (monthNumber) {
     case 1:
-      return "january";
+      return "January";
     case 2:
       return "February";
     case 3:
@@ -32,7 +32,7 @@ console.log(getMonthName);
 function showMonthName() {
   const monthNumber = parseInt(document.getElementById("monthInput").value);
   const monthName = getMonthName(monthNumber);
-   document.getElementById(
-     "monthNameDisplay"
-   ).textContent = `Month Name :${monthName}`;
+  document.getElementById(
+    "monthNameDisplay"
+  ).textContent = `Month Name :${monthName}`;
 }
