@@ -42,7 +42,12 @@
       <form onsubmit="formSubmit(event)">
         <h2 style="color: crimson">SIGN UP</h2>
         Name <sup>*</sup>
-        <input type="text" id="user" name="user-name" />
+        <input
+          type="text"
+          id="user"
+          name="user-name"
+          placeholder="Enter Your name"
+        />
         <br /><br />
         Email <sup>*</sup
         ><input
@@ -61,11 +66,12 @@
         />
         <br />
         <br />
+        <input type="number" id="monthInput" min="1" max="12" />
+        <button onclick="showMonthName()">Get Month Name</button>
 
-        <!-- <button class="btn1" type="reset">Cancel</button> -->
-
+        <p id="monthNameDisplay"></p>
         <br />
-        <!-- <input type="submit" /> -->
+        <br />
 
         <button class="btn" type="submit" onclick="pushData()">SUBMIT</button>
       </form>
