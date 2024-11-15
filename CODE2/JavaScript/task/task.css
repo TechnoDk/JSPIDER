@@ -28,9 +28,6 @@ nav {
     position: fixed;
     top: 0;
     z-index: 100;
-    border: 1px solid black;
-    padding:10px;
-    border-radius:calc(10px);
 }
 
 nav>.logo {
@@ -43,8 +40,6 @@ nav>.logo>img {
     height: 100%;
     display: block;
     margin: 0 auto;
-    border: 2px solid rgb(237, 202, 199);
-    border-radius: calc(25px);
 }
 
 nav>ul {
@@ -52,19 +47,17 @@ nav>ul {
     height: 100%;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     text-transform: capitalize;
-    margin-left: 20px;
 }
 
 nav>ul>li {
     padding: 5px 10px;
     border-radius: 5px;
-    color: #3c10ed;
+    color: #DC0183;
     cursor: pointer;
     margin-right: 10px;
-    background-color: rgb(54, 165, 85);
 }
 
 nav>ul>li:hover {
@@ -95,38 +88,34 @@ nav>ul>li:hover {
 }
 
 #home>.heroContent {
-    height: 90%;
+    height: 80%;
     width: 50%;
     /* border: 1px solid black; */
     padding: 0 30px;
-    padding-right: 2888px;
 }
 
 #home>.heroContent>h1 {
     text-transform: capitalize;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 20px;
-    color: #6324af;
-    /* text-justify:center; */
-
-    
+    color: #DC0183;
 }
 
 #home>.heroContent>a>button {
     padding: 10px 30px;
     text-transform: capitalize;
     font-weight: 700;
-    border: 2px darkblue transparent;
-    background-color: #22c00d;
-    color: rgb(195, 13, 13);
-    border-radius: calc(10px);
-    margin-top: 20px;
+    border: 2px solid transparent;
+    background-color: #DC0183;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
     cursor: pointer;
 }
 
 #home>.heroContent>button:hover {
-    color: #2510de;
+    color: #DC0183;
     background-color: white;
     border: 2px solid #DC0183;
     transition: 0.1s;
@@ -161,7 +150,6 @@ header>h1 {
     background-color: white;
     padding: 10px;
     position: relative;
-    border: 2px dotted black;
 }
 
 #productsWrapper>.card>img {
@@ -187,8 +175,8 @@ header>h1 {
 
 #productsWrapper>.card>button {
     padding: 5px 10px;
-    border: 2px solid #1810c1;
-    background-color: rgb(209, 196, 196);
+    border: 2px solid #DC0183;
+    background-color: white;
     border-radius: 5px;
     font-weight: 600;
     position: absolute;
@@ -199,7 +187,7 @@ header>h1 {
 
 #productsWrapper>.card>button:hover {
     background-color: #DC0183;
-    color: rgb(236, 231, 231);
+    color: white;
     transition: 0.2s;
     transform: scale(1.05);
 }
