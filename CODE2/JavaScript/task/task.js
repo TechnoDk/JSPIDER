@@ -51,9 +51,13 @@
 
 // DATE :- 12/11/2024(TUESDAY)
 console.log("12/11/2024");
+const productsWrapper = document.getElementById("productsWrapper");
+const cartProducts = document.getElementById("cartProducts");
+const price = document.getElementById("price");
+
 let cartItems = [];
 
-const productsWrapper = document.getElementById("productsWrapper");
+// const productsWrapper = document.getElementById("productsWrapper");
 // ! To Fetch Data From API
 async function fetchProducts() {
   let response = await fetch("https://fakestoreapi.com/products");
@@ -90,22 +94,23 @@ function DisplayProducts(products) {
     add_to_cart_btn.addEventListener("click", () => {
       console.log("item added to cart");
       console.log(product);
+
+      // cartItem.push({ ...product, quantity: 1 });
+
+      let existingProduct = cartItems.find((ele) => ele.id === product.id);
+
+      if (existingProduct) {
+        existingProduct.quantity += 1;
+      } else {
+        cartItems.push({ ...product, quantity: 1 });
+        add_to_cart_btn.textContent = "Add more";
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+      DisplayCartItems(); //calling DisplayCartItems function on btn click
+
+      console.log(cartItems);
     });
-
-    // cartItem.push({ ...product, quantity: 1 });
-
-    let existingProduct = cartItems.find((ele) => ele.id === product.id);
-
-    if (existingProduct) {
-      existingProduct.quantity += 1;
-    } else {
-      cartItems.push({ ...product, quantity: 1 });
-      add_to_cart_btn.textContent = "Add more";
-    }
-
-    localStorage.setItem("cart", JSON.stringify(cartItems));
-    console.log(cartItems);
-
     card.append(
       image,
       product_title,
@@ -115,5 +120,43 @@ function DisplayProducts(products) {
     );
 
     productsWrapper.append(card);
+  });
+}
+function DisplayCartItems() {
+  console.log("DisplayCartItems");
+  let totalPrice = 0;
+
+  // clearing pervious HTML
+  cartProducts.innerHTML = "";
+
+  // fetching cart items from localstorage
+  let cartData = JSON.parse(localStorage.getItem("cart"));
+  console.log(cartData);
+
+  // iterating cart items and displaying on UI
+  cartData.map((item) => {
+    let cartCard = document.createElement("article");
+    let itemImage = document.createElement("img");
+    let itemContentWrapper = document.createElement("div");
+    let itemTitle = document.createElement("h1");
+    let itemQuanity = document.createElement("p");
+    let itemPrice = document.createElement("p");
+    let deleteItem = document.createElement("button");
+
+    cartCard.setAttribute("id", "cartCard");
+    itemImage.setAttribute("src", item.image);
+
+    itemTitle.textContent = `${item.title.slice(0, 30)}........`;
+    itemQuanity.textContent = `Quantity: ${item.quantity}`;
+    itemPrice.textContent = `Price: ${item.quantity * item.price}`;
+    deleteItem.textContent = "Remove";
+
+    totalPrice += item.price;
+    console.log("total", totalPrice);
+    price.textContent = `Rs.${Math.floor(totalPrice)}`;
+
+    itemContentWrapper.append(itemTitle, itemQuanity, itemPrice, deleteItem);
+    cartCard.append(itemImage, itemContentWrapper);
+    cartProducts.append(cartCard);
   });
 }
