@@ -191,3 +191,15 @@ header>h1 {
     transition: 0.2s;
     transform: scale(1.05);
 }
+#cart {
+    height: 100%;
+    width:100%;
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#cart>.cartProducts{
+    width: 200px;
+    height: 300px;
+    border: 2px solid blue;
+}

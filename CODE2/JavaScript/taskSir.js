@@ -1,4 +1,5 @@
 const productsWrapper = document.getElementById("productsWrapper");
+const cartProducts = document.getElementById("cartProducts");
 let cartItems = [];
 
 //! TO FETCH DATA FROM API
@@ -45,7 +46,9 @@ function DisplayProducts(products) {
         add_to_cart_btn.textContent = "Add More";
       }
       localStorage.setItem("cart", JSON.stringify(cartItems));
-      console.log(cartItems);
+      // console.log(cartItems);
+
+      DisplayCartItems(); //calling DisplayCartItem
     });
 
     card.append(
@@ -57,5 +60,36 @@ function DisplayProducts(products) {
     );
 
     productsWrapper.append(card);
+  });
+}
+function DisplayCartItems() {
+  console.log("DisplayCartItems");
+
+  // clearing Previous HTML
+  cartProducts.innerHTML = "";
+
+  // fetching cart items from localstorage
+  let cartData = JSON.parse(localStorage.getItem("cart"));
+  console.log(cartData);
+
+  //iterating cart items and displaying on UI
+  cartData.map((item) => {
+    let cartCard = document.createElement("article");
+    let itemImage = document.createElement("img");
+    let itemTitle = document.createElement("h1");
+    let itemQuantity = document.createElement("p");
+    let itemPrice = document.createElement("p");
+
+    itemImage.setAttribute("src", item.image);
+
+    itemTitle.textContent = `Name:${item.title}`;
+
+    itemQuantity.textContent = `Quantity:${item.quantity}`;
+
+    itemPrice.textContent = `Price: ${item.quantity * item.price}`;
+
+    cartCard.append(itemImage, itemTitle, itemQuantity, itemPrice);
+
+    cartProducts.append(cartCard);
   });
 }
