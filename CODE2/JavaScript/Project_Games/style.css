@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(15, 14, 14);
+    border: 2px solid black;
+    /* width: 100px; */
+    height: 100px;
+}
+.navbar>.home>.hom{
+    text-decoration: none;
+    margin-left: 100px;
+    position: relative;
+}
+.navbar>.logo>.log{
+    width: 45px;
+    height: 39px;
+    position: absolute;
+}

@@ -1,5 +1,6 @@
 const productsWrapper = document.getElementById("productsWrapper");
 const cartProducts = document.getElementById("cartProducts");
+const price = document.getElementById("price");
 let cartItems = [];
 
 //! TO FETCH DATA FROM API
@@ -32,7 +33,6 @@ function DisplayProducts(products) {
 
     add_to_cart_btn.addEventListener("click", () => {
       console.log("item added to cart");
-      console.log(product);
 
       // finding if product exists in cart or not
       let existingProduct = cartItems.find((ele) => ele.id === product.id);
@@ -46,9 +46,7 @@ function DisplayProducts(products) {
         add_to_cart_btn.textContent = "Add More";
       }
       localStorage.setItem("cart", JSON.stringify(cartItems));
-      // console.log(cartItems);
-
-      DisplayCartItems(); //calling DisplayCartItem
+      DisplayCartItems(); //calling DisplayCartItems function on btn click
     });
 
     card.append(
@@ -62,34 +60,42 @@ function DisplayProducts(products) {
     productsWrapper.append(card);
   });
 }
+
 function DisplayCartItems() {
   console.log("DisplayCartItems");
+  let totalPrice = 0;
 
-  // clearing Previous HTML
+  // clearing pervious HTML
   cartProducts.innerHTML = "";
 
   // fetching cart items from localstorage
   let cartData = JSON.parse(localStorage.getItem("cart"));
   console.log(cartData);
 
-  //iterating cart items and displaying on UI
+  // iterating cart items and displaying on UI
   cartData.map((item) => {
     let cartCard = document.createElement("article");
     let itemImage = document.createElement("img");
+    let itemContentWrapper = document.createElement("div");
     let itemTitle = document.createElement("h1");
-    let itemQuantity = document.createElement("p");
+    let itemQuanity = document.createElement("p");
     let itemPrice = document.createElement("p");
+    let deleteItem = document.createElement("button");
 
+    cartCard.setAttribute("id", "cartCard");
     itemImage.setAttribute("src", item.image);
 
-    itemTitle.textContent = `Name:${item.title}`;
-
-    itemQuantity.textContent = `Quantity:${item.quantity}`;
-
+    itemTitle.textContent = `${item.title.slice(0, 30)}........`;
+    itemQuanity.textContent = `Quantity: ${item.quantity}`;
     itemPrice.textContent = `Price: ${item.quantity * item.price}`;
+    deleteItem.textContent = "Remove";
 
-    cartCard.append(itemImage, itemTitle, itemQuantity, itemPrice);
+    totalPrice += item.price;
+    console.log("total", totalPrice);
+    price.textContent = `Rs.${Math.floor(totalPrice)}`;
 
+    itemContentWrapper.append(itemTitle, itemQuanity, itemPrice, deleteItem);
+    cartCard.append(itemImage, itemContentWrapper);
     cartProducts.append(cartCard);
   });
 }
