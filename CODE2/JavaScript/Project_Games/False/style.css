@@ -1,0 +1,70 @@
+/* General navbar styling */
+.navbar {
+    background-color: rgb(15, 14, 14);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+    /* Pushes the menu to the right */
+}
+
+.menu-item {
+    position: relative;
+    margin-left: 30px;
+}
+
+.menu-item>a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item>a:hover {
+    color: rgb(236, 20, 12);
+    background-color: rgb(42, 42, 48);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    /* Position below the parent link */
+    left: 0;
+    background-color: rgb(30, 30, 30);
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+}
+
+/* Show dropdown on hover */
+.menu-item:hover .dropdown-menu {
+    display: block;
+}
