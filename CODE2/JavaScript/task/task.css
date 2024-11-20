@@ -196,3 +196,28 @@ header>h1 {
     width: 100%;
     border: 2px solid black;
 }
+#totalPrice{
+    margin-top: 40px;
+}
+#cartCard{
+    height: 80px;
+    width: 100%;
+     display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    /* align-items: center;  */
+    padding: 15px;
+   border: 2px solid black;
+}
+.image{
+    height: 90%;
+    width: 100px;
+    margin-right: 20px;
+    
+}
+.wrapped{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}

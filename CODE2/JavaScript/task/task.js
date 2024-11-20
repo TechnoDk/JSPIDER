@@ -54,7 +54,7 @@ console.log("12/11/2024");
 const productsWrapper = document.getElementById("productsWrapper");
 const cartProducts = document.getElementById("cartProducts");
 const price = document.getElementById("price");
-
+let totalPrice = 0;
 let cartItems = [];
 
 // const productsWrapper = document.getElementById("productsWrapper");
@@ -124,7 +124,7 @@ function DisplayProducts(products) {
 }
 function DisplayCartItems() {
   console.log("DisplayCartItems");
-  let totalPrice = 0;
+  
 
   // clearing pervious HTML
   cartProducts.innerHTML = "";
@@ -145,6 +145,8 @@ function DisplayCartItems() {
 
     cartCard.setAttribute("id", "cartCard");
     itemImage.setAttribute("src", item.image);
+    itemImage.setAttribute("class", "image");
+    itemContentWrapper.setAttribute("class", "wrapped");
 
     itemTitle.textContent = `${item.title.slice(0, 30)}........`;
     itemQuanity.textContent = `Quantity: ${item.quantity}`;
