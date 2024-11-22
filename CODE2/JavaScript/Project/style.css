@@ -1,0 +1,361 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #000; */
+    /* color: white;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+ 
+  .nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: black;
+    border-bottom: 2px solid #140e0e;
+    position: fixed;
+    width: 100%;
+    max-height: 50px;
+    z-index: 10;
+  }
+  .nav-section{
+      padding: 0;
+      margin: 0;
+  }
+  /* Logo section */
+  .logo-section {
+    
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+
+    
+  }
+  
+  .logo1 {
+    height: 15px;
+    margin-right: 12px;
+
+  
+    
+    
+  }
+  
+  .logo2{
+    height: 30px;
+    margin-right: 0px;
+    border: #ff4655;
+  }
+  
+  /* Menu section */
+  .menu-section {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 800px;
+  }
+
+  .hamburger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+    .menu-section.show {
+      display: flex;
+    } */
+
+    .dropdown-ico {
+      color: #4d4444; 
+      font-size: 14px; 
+      margin-left: 8px; 
+  }
+   
+
+
+
+  
+  .dropdown {
+    position: relative;
+    
+
+  }
+  
+  .dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 6PX;
+  }
+  
+  .dropdown-btn:hover {
+    /* border-bottom:4px solid #e23a4d; */
+    text-decoration:4px underline #ff4655;
+    text-underline-offset: 16px;
+    background-color: #3a3737;
+    border-radius: 10px;
+    
+  }
+  
+  /* Actions section */
+  .actions-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon
+   {
+    font-size: 12px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .search-icon:hover {
+    color: #ff4655;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .dropdown-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: rgba(48, 48, 48, 0.9);
+    /* border: 1px solid #ff4655; */
+    border-radius: 5px;
+    min-width: 180px;
+    z-index: 10;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 13px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #545151;
+    border-radius: 15px;
+  }
+
+  .search-icon{
+     /* background-color: white; */
+     background-color: #352d2d;
+     color: white;
+     padding: 10px;
+     border-radius: 15px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    
+  }
+
+  .btn {
+    background-color: #ff4655;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 8px;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e23a4d;
+  }
+  .home{
+    margin-top: 78px;
+    height: 561px;
+    width: 100%;
+    /* background-color: #e6243b; */
+    background-image: url("back.png");
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+
+
+.info{
+  height: 334px;
+  width: 594px;
+  margin-top: 60px;
+  /* border: 5px solid black; */
+  overflow: hidden;
+  padding-left: 35px;
+}
+.link{
+  color: black;
+
+}
+.link:hover{
+  color: white;
+  /* pointer:cursor; */
+}
+.info h1{
+  font-size: 100px;
+  color: white;
+}
+.info p{
+  font-size: 18px;
+  margin: 10px;
+  /* padding: 15px; */
+  color: white;
+  letter-spacing: 1px;
+}
+  .video1{
+    margin-top: 30px;
+    height: 334px;
+    width: 594px;
+    padding-right: 40px;
+    margin-left: 20px;
+    
+  }
+
+
+
+  .games{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    flex-direction: row;
+    
+    
+  }
+  .game{
+    height: 300px;
+    width: 396px;
+    margin: 20px;
+    flex-direction: row;
+  
+    
+    
+  }
+  .game img{
+    height: 222px;
+    width: 100%;
+    padding-bottom: 10px; 
+    flex-direction: row;
+    display: flex;
+
+  }
+  .details{
+    height: 78px;
+    width: 100%;
+  }
+  .details h2{
+    font-size: 21px;
+    }
+
+  .game p{
+    padding-bottom: 5px;
+  }
+.show-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 100%;
+}
+.show-more h2{
+  
+  font-size: 18px; 
+  padding-bottom: 40px;
+}
+.add{
+  color:#e23a4d ;
+}
+.download{
+  height: 78px;
+  width: 100%;
+  background-color: #2e2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.p{
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+.down{
+  background-color: black;
+}
+.social-icons{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.icon{
+  padding: 20px;
+  color: white;
+ 
+
+}
+.logoo{
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+ 
+
+}
+.logos{
+  height: 40px;
+ /* padding-bottom: 10px; */
+ width: 50px;
+ 
+ 
+
+}
+.logo4{
+height: 50px;
+  background-color:black;
+  margin-left: 40px;
+  
+}

@@ -1,64 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VALORANT GAME Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valorant Clone</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
 
-<body>
-  <nav class="navbar">
-    <div class="logo">
-      <img class="log" src="./logo/download.jpg" alt="Logo">
-    </div>
-    <div class="home">
-      <div class="menu-item">
-        <a class="hom" href="">GAME INFO
-          <div class="dropdown-menu">
-            <a href="#agents">Agents</a>
-            <a href="#maps">Maps</a>
-            <a href="#weapons">Weapons</a>
-          </div>
+         <div class="top"></div>
+    </section>
+    <header class="nav-container">
+      <div class="nav-section logo-section">
+        <img src="./logo/download.jpg" alt="Logo 1" class="logo logo1" />
+        <img src="./logo/img1.jpg" alt="Logo 2" class="logo logo2" />
       </div>
-      </a>
-      <a class="hom" href="">MEDIA</a>
-      <a class="hom" href="">NEWS</a>
-      <a class="hom" href="">LEADERBOARDS</a>
-      <div class="menu-item">
-        <a class="hom" href="">SUPPORT
-          <div class="dropdown-menu">
-            <a href="#faq">FAQ</a>
-            <a href="#tickets">Submit a Ticket</a>
-            <a href="#guides">Guides</a>
-          </div>
-      </div>
-      </a>
-      <div class="menu-item">
-        <a class="hom" href="">OUR SOCIALS
-          <div class="dropdown-menu">
-            <a href="#facebook">Facebook</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#instagram">Instagram</a>
-          </div>
-      </div>
-      </a>
-      <a class="hom" href="">ESPORTS</a>
-      <a class="hom" href="">MORE</a>
-      <span class="search-icon">&#128269;</span> <!-- Unicode for search icon -->
 
-      <div class="language-selector">
-        <span class="world-icon">&#127757;</span>
-         <div class="dropdown-menu">
-          <a href="#">Hindi</a>
-          <a href="#">English</a>
-          <a href="#">Spanish</a>
-          <a href="#">French</a>
-          
+      <div class="nav-section menu-section">
+        <div class="dropdown">
+          <button class="dropdown-btn">Game Info</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Media</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">News</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Leaderboards</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Support</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Our Socials</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Esports</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">MORE</button>
         </div>
       </div>
-  </nav>
-</body>
 
+      <div class="nav-section actions-section">
+        <i class="fas fa-search search-icon" title="Search"></i>
+        <div class="dropdown">
+          <img
+            src="./logo/img1.jpg"
+            alt="Vecteezy Logo"
+            class="dropdown-img"
+            title="Vecteezy Menu"
+          />
+          <div class="dropdown-menu">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </div>
+        <a href="play-now.html" class="btn play-now">Play Now</a>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">☰</div>
+    </header>
+
+    <section class="home">
+      <div class="info">
+        <h1>MEDIA</h1>
+
+        <p>
+          Our work is your play. Whether you're press, a content creator or
+          something in between, if you see it here it's yours to use.
+        </p>
+        <p>
+          Don't forget, if you create something with these files, tag
+          @PlayVALORANT on social media. We cannot wait to see what you make,
+          just remember to keep in mind our
+          <a href="https://www.riotgames.com/" class="link">
+            Legal Jibber Jabber.></a
+          >
+        </p>
+      </div>
+
+      <div class="video1">
+        <video
+          src="./videos/game1.mp4"
+          loop
+          autoplay
+          muted
+          class="video1"
+        ></video>
+      </div>
+    </section>
+
+    <section class="games">
+      <div class="game">
+        <img src="./assets/img1.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/Skye_KeyArt_PR_3.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/LNY_Sage-2_ShoppingB.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/Gekko_Dark_2.png" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/img16.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/img18.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/img20.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/VALORANT_Brimm_Dark.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/VALORANT_Omen_Dark.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/VALORANT_VIPER_2.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="./assets/img24.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+      <div class="game">
+        <img src="./assets/img22.jpg" alt="" />
+        <div class="details">
+          <p>01/06/2024</p>
+          <h2>Episode 8 Act Waoopapers</h2>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
