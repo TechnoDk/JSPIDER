@@ -6,12 +6,14 @@
   }
   
   body {
+    
     font-family: 'Arial', sans-serif;
     /* background-color: #000; */
     /* color: white;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+    
   }
   
  
@@ -52,8 +54,8 @@
   
   .logo2{
     height: 30px;
-    margin-right: 0px;
-    border: #ff4655;
+    margin-right: 0px
+    
   }
   
   /* Menu section */
@@ -202,8 +204,8 @@
     background-color: #e23a4d;
   }
   .home{
-    margin-top: 78px;
-    height: 561px;
+    margin-top: 50px;
+    height: 400px;
     width: 100%;
     /* background-color: #e6243b; */
     background-image: url("back.png");
@@ -214,8 +216,8 @@
 
 
 .info{
-  height: 334px;
-  width: 594px;
+  height: 304px;
+  width: 504px;
   margin-top: 60px;
   /* border: 5px solid black; */
   overflow: hidden;
@@ -230,22 +232,24 @@
   /* pointer:cursor; */
 }
 .info h1{
-  font-size: 100px;
+  font-size: 80px;
   color: white;
+  
 }
 .info p{
-  font-size: 18px;
+  font-size: 12px;
   margin: 10px;
   /* padding: 15px; */
   color: white;
   letter-spacing: 1px;
 }
   .video1{
-    margin-top: 30px;
-    height: 334px;
-    width: 594px;
-    padding-right: 40px;
-    margin-left: 20px;
+    margin-top: 400px;
+    height: 250px;
+    width: 400px;
+    padding-right: 20px;
+    margin: 15px;
+  
     
   }
 
@@ -256,12 +260,13 @@
     flex-wrap: wrap;
     margin-left: 20px;
     flex-direction: row;
+    justify-content:space-evenly ;
     
     
   }
   .game{
-    height: 300px;
-    width: 396px;
+    height: 160px;
+    width: 186px;
     margin: 20px;
     flex-direction: row;
   
@@ -269,7 +274,7 @@
     
   }
   .game img{
-    height: 222px;
+    height: 142px;
     width: 100%;
     padding-bottom: 10px; 
     flex-direction: row;
@@ -281,7 +286,7 @@
     width: 100%;
   }
   .details h2{
-    font-size: 21px;
+    font-size: 15px;
     }
 
   .game p{

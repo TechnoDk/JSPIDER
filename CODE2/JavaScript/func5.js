@@ -3,6 +3,8 @@ console.log("hello world");
 
 async function chandData() {
   let dk = await fetch("https://fakestoreapi.com/products");
+  // console.log(dk);
+  
   let ck = await dk.json();
   console.log(ck);
 
@@ -10,10 +12,10 @@ async function chandData() {
 }
 chandData();
 
-function displayDate(allck) {
-  console.log(allck);
-  allck.map((ele) => {
-    console.log(ele.title);
+function displayDate(allproducts) {
+  console.log(allproducts);
+  allproducts.map((ele) => {
+     console.log(ele.title);
     //
     document.write(`
         <section id="item" ><h1>${ele.title}</h1>
