@@ -63,12 +63,12 @@ console.log("Date:-21-11-2024")
 
 // named import
 
-import { Display, add } from "./script.js";// named module call
+import { DisplayData } from "./react1.js";// named module call
 import substract from "./script.js";// default module call
-Display();
+DisplayData();
 
-let val = add(20, 30)
-console.log(val);
+
+console.log(DisplayData);
 
 let var2 = substract(50, 10)
 console.log(var2);
