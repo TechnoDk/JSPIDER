@@ -1,7 +1,9 @@
-import Navbar from "./Component/Navbar";
+// import Navbar from "./Component/Navbar";
 // import NavbarCBC from "./Component/NavbarCBC"
-import States from "./states/fbc/States";
-import Counter from "./states/fbc/Counter"
+// import States from "./states/fbc/States";
+// import Counter from "./states/fbc/Counter";
+// import StatesInCBC from "./states/cbc/StatesInCBC";
+import Parent from "./props/Parent";
 const App = () => {
     return (
         <div>
@@ -15,7 +17,9 @@ const App = () => {
             <h1> I am App component
             </h1>
             {/* <States/> */}
-               <Counter/>
+            {/* <Counter/> */}
+            {/* <StatesInCBC/> */}
+            <Parent/>
         </div>
     );
 
