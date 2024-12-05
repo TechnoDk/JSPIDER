@@ -4,6 +4,7 @@
 // import Counter from "./states/fbc/Counter";
 // import StatesInCBC from "./states/cbc/StatesInCBC";
 import Parent from "./props/Parent";
+import PropsDrilling from "./props/propsdrilling/PropsDrillingParent";
 const App = () => {
     return (
         <div>
@@ -19,7 +20,8 @@ const App = () => {
             {/* <States/> */}
             {/* <Counter/> */}
             {/* <StatesInCBC/> */}
-            <Parent/>
+            <Parent />
+            <PropsDrilling/>
         </div>
     );
 
