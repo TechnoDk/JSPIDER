@@ -8,5 +8,6 @@ import { createRoot } from "react-dom/client";
 
 // import { createRoot } from "react-dom/client";
 import App from "./App"
+// import "./global.css"
 let div1 = document.querySelector("#root")
 createRoot(div1).render(<App></App>);

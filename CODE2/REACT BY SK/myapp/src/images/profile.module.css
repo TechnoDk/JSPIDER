@@ -1,0 +1,22 @@
+*{
+    background-color: rgb(8, 187, 11);
+}
+#card{
+
+    height: 310px;
+    width: 310px;
+    border: 2px solid black;
+    margin: 20px auto;
+     
+}
+#img{
+    width:50px;
+    height: 60px;
+
+}
+h2{
+    background-color: blue;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+}

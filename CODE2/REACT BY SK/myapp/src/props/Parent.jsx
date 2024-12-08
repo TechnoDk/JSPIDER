@@ -11,7 +11,7 @@ const Parent = () => {
     };
     function Increment() {
         console.log("Jai Shree Ram🙏🙏 ");
-     document.write(" <h1>Jai Shree Ram🙏 </h1> Hello Wolrd  💕!!")
+     document.write(" <h1>Jai Shree Ram🙏 </h1> Hello Wolrd 💕!!")
     
   }
 
@@ -24,7 +24,7 @@ const Parent = () => {
 
     // ChildC JSX
 
-    let [state, setState] = useState("Parent");
+    let [state, setState] = useState("Ram Ram");
     return (
         <div>
             {/* <ChildA abc={data} /> */}

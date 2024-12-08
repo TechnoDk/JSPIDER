@@ -3,7 +3,7 @@ const ChildB= ({fun,fun1}) => {
 
     return (
         <div>
-            <h1>I am child B</h1>
+            {/* <h1>I am child B</h1> */}
             <button onClick={fun}>Click</button>
             <button onClick={fun1}>Increment</button>
         </div>

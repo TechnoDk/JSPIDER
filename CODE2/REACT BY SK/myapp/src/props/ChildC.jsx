@@ -7,8 +7,8 @@ const ChildC= ( {setterFun}) => {
 
     return (
         <div>
-            <h1>hello world!!🤷‍♂️</h1>
-            <button onClick={()=>setterFun(data)}>Send to parent </button>
+            <h1>hello world!!🤷‍♂️ </h1>
+            <button onClick={()=>setterFun(data)}>Send to parent(Ram Ram) </button>
              </div>
     )
 }

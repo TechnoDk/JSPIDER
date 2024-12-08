@@ -1,0 +1,12 @@
+import style from "./footer.module.css";
+const Footer = () => {
+    return (
+        <footer id={style.footer} >
+            <h1 className={style.heading}>
+                I am footer
+            </h1>
+            <h2 className={style.head}>Hello world</h2>
+        </footer>
+    )
+}
+export default Footer;
