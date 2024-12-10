@@ -1,0 +1,73 @@
+body{
+     background-color: rgb(49, 41, 41);
+    
+}
+.div1{
+
+    background-color: rgb(36, 36, 154);
+    width: 50%;
+    border: 2px solid salmon;
+    margin-left: 25%;
+    border-radius: calc(15px);
+    margin-top: 20px;
+
+}
+.header{
+    background-color: bisque;
+    border: 2px solid rgb(7, 164, 94);
+    padding: 2px;
+    margin: 2px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: calc(20px);
+}
+.form{
+    border: 2px solid sandybrown;
+    border-radius: calc(10px);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 10%;
+    margin-left: 30%;
+    background-color: rgb(211, 144, 137);
+}
+.lemail{
+    border: 2px solid springgreen;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius:  calc(30px);
+    background-color: blue;
+
+}
+.email{
+    border:2px dotted rgb(196, 27, 8);
+    font-size: smaller;
+    font-weight: 100;
+
+}
+.lpassword{
+    border: 2px solid springgreen;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius:  calc(30px);
+    background-color: rgb(147, 66, 198);
+
+
+}
+.password{
+    border:2px dotted rgb(13, 115, 216);
+    font-size: smaller;
+    font-weight: 100;
+
+
+}
+.btn{
+
+    background-color: rgb(188, 32, 15);
+    border-radius: calc(20px);
+    width: 150px;
+    height: 25px;
+    margin-left: 25px;
+}
