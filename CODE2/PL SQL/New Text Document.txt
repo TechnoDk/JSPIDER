@@ -1,0 +1,9 @@
+ 1  declare
+ 2  name varchar2(12);
+ 3  age number;
+ 4  begin
+ 5  name:='Deepak';
+ 6  age:=21;
+ 7  dbms_output.put_line('Myname : '||name);
+ 8  dbms_output.put_line('Myage : '||age);
+ 9* end;

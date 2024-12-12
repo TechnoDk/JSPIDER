@@ -1,0 +1,9 @@
+1  declare
+2  num number:=24;
+3  begin
+4  if mod(num,2)=0 then
+5  dbms_output.put_line('Even Number');
+6  else
+7  dbms_output.put_line('Odd Number');
+8  end if;
+9* end;

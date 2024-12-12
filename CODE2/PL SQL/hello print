@@ -1,0 +1,5 @@
+//set serveroutput on(start server then start program )
+begin
+dbms_output.put_line('hello world');
+end;
+/
