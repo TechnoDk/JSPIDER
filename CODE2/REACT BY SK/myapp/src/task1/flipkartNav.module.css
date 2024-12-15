@@ -1,16 +1,19 @@
 nav{
     height: 80px;
-    width: 100%;
+    width: 97%;
     background-color: white;
-    border: 1px solid black;
+    /* border: 1px solid rgb(209, 193, 193); */
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px 10px;
+    /* position: fixed; */
+    margin-right: 4px;
+    margin-left: 20px;
 
 }
 .logo{
- background-color: aqua;
- width: 14%;
+ /* background-color: aqua; */
+ width: 10%;
  height: 100%;
  display: flex;
  justify-content: flex-end;
@@ -22,14 +25,19 @@ nav{
     
 }
 .searchContainer{
-    background-color:blueviolet;
-    width: 50%;
-    height: 100%;
-
+    background-color:rgb(223, 220, 225);
+    width: 54%;
+    height: 30px;
+    border: 2px solid whitesmoke;
+    caret-color: black;
+    align-content: center;
+    border-radius:calc(5px);
+    
+     
 }
 ul{
-    background-color: cadetblue;
-    width: 36%;
+    background-color:whitesmoke;
+    width: 42%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

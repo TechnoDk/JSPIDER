@@ -1,0 +1,33 @@
+#todoswrapper{
+    background-color:  rgb(145, 187, 187);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    align-items: center;
+    
+}
+#todoswrapper>section{
+ border: 1px solid gainsboro;
+ width: 170px;
+ padding: 10px;
+
+}
+#todoswrapper > section:hover{
+    box-shadow: 5px 8px 5px black;
+    transition: 0.5s;
+
+}
+#todoswrapper > section > button:last-of-type{
+    margin-left: 20px;
+}
+#todoswrapper > section > button{
+    padding: 3px 10px ;
+}
+.del{
+    background-color: aquamarine;
+}
+.del:hover{
+    color:black;
+    background-color: red;
+}

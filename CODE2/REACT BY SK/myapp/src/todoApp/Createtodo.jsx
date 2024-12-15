@@ -10,7 +10,11 @@ const Createtodo = (prop) => {
                 <h2>
                     Create Todo
                 </h2>
-                <input type="text"  placeholder="...todo" value={todo} onChange={handleTodo}/>
+                <input
+                    type="text"
+                    placeholder="...todo"
+                    value={todo}
+                    onChange={handleTodo} />
                 <button>submit</button>
             </form>
 

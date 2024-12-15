@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(118, 175, 97);
 }
 #createtodo > form{
     padding: 10px;

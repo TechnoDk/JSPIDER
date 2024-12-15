@@ -13,7 +13,7 @@
 // import ControlledForms2 from "./forms/ControlledForms2";
 // import ControlledForms1 from "./forms/ControlledForms2";
 import TodoWrapper from "./todoApp/TodoWrapper";
-// import FlipkartNav from "./task1/FlipkartNav";
+import FlipkartNav from "./task1/FlipkartNav";
     
 const App = () => {
     return (
@@ -35,10 +35,10 @@ const App = () => {
             {/* <InlineCSS/> */}
             {/* <Footer/> */}
             {/* <Profile /> */}
-            {/* <FlipkartNav/> */}
+            <FlipkartNav/>
             {/* <ControlledForms1/> */}
             {/* <ControlledForms2/> */}
-            <TodoWrapper/>
+            {/* <TodoWrapper/> */}
         </div>
     );
 
