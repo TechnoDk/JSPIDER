@@ -10,7 +10,7 @@ class StatesInCBC extends Component{
     
         
     };
-    decrement = () => {
+    decrement = () => { 
     
             this.setState({ count: this.state.count - 1 });
         

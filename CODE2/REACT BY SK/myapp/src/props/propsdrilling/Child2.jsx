@@ -11,6 +11,7 @@ const Child2 = (y) => {
 
     return (
         <div>
+            <h1>hello boys</h1>
 
               </div>
     )
