@@ -20,7 +20,9 @@ import { useState } from "react";
 // import LifeCycle from "./lifecycle/LifeCycle";
 // import SideEffect from "./useEffect/SideEffect";
 // import SideEffect2 from "./useEffect/SideEffect2";
-import FetchAPI from "./fetch/FetchAPI";
+// import FetchAPI from "./fetch/FetchAPI";
+import TaskPhotos from "./Assignment/TaskPhotos";
+
 const App = () => {
     let [toggle, setToggle] = useState(false);
     return (
@@ -52,9 +54,10 @@ const App = () => {
            {toggle ? <LifeCycle/> : <h1>No component </h1> } */}
             {/* <SideEffect /> */}
             {/* <SideEffect2 /> */}
-            <FetchAPI/>
+            {/* <FetchAPI/> */}
             {/* <button onClick={() => setToggle(!toggle)}>toggle</button>
             {toggle? <SideEffect2 />: <SideEffect /> } */}
+            <TaskPhotos/>
         </div>
     );
 
