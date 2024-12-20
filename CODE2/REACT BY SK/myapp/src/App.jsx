@@ -21,7 +21,9 @@ import { useState } from "react";
 // import SideEffect from "./useEffect/SideEffect";
 // import SideEffect2 from "./useEffect/SideEffect2";
 // import FetchAPI from "./fetch/FetchAPI";
-import TaskPhotos from "./Assignment/TaskPhotos";
+// import TaskPhotos from "./Assignment/TaskPhotos";
+// import TasakTodos from "./Assignment/TasakTodos";
+import ContextParent from "./context/ContextParent";
 
 const App = () => {
     let [toggle, setToggle] = useState(false);
@@ -57,7 +59,9 @@ const App = () => {
             {/* <FetchAPI/> */}
             {/* <button onClick={() => setToggle(!toggle)}>toggle</button>
             {toggle? <SideEffect2 />: <SideEffect /> } */}
-            <TaskPhotos/>
+            {/* <TaskPhotos/> */}
+            {/* <TasakTodos/> */}
+            <ContextParent/>
         </div>
     );
 

@@ -25,17 +25,28 @@ class ProgramEnd {
                 if (j <= sSpace) {
                     System.out.print("  ");
 
+                } else {
+                    System.out.print("* ");
+                }
+            for (int j = mid + 1; j <= n + 1; j++) {
+                if (i <= mid && (i == 1 || j == n + 1)) {
+                    System.out.print("@ ");
+
                 }
                 else {
-                System.out.print("* ");
-               }
+                    System.out.print("  ");
+                }
+            }
             if (i < mid) {
-            
+
                 sSpace--;
             } else {
                 sSpace++;
             }
             System.out.println();
         }
+       
+        
+         
     }
 }
