@@ -1,3 +1,4 @@
+package Level3;
 import java.util.Scanner;
 
 class Pyramid2 {

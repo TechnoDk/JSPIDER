@@ -1,9 +1,10 @@
+package Level3;
 import java.util.Scanner;
 
-class MirrorPyramid2 {
+class Butterfly {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number of rows: ");
+        System.out.println("ENter the Number of rows: ");
         int n = sc.nextInt();
         printPattern(n);
     }
@@ -14,19 +15,21 @@ class MirrorPyramid2 {
             return;
         }
         int mid = n / 2 + 1;
-        int star = n;
-        int space = 0;
+        int sStar = 1;
+        int eStar = n;
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= space; j++)
-                System.out.print("  ");
-            for (int j = 1; j <= star; j++)
-                System.out.print(j % 2 + " ");
+            for (int j = 1; j <= n; j++) {
+                if (j <= sStar || j >= eStar)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
             if (i < mid) {
-                star -= 2;
-                space++;
+                sStar++;
+                eStar--;
             } else {
-                star += 2;
-                space--;
+                sStar--;
+                eStar++;
             }
             System.out.println();
         }

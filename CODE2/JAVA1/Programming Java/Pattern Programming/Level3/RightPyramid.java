@@ -1,9 +1,10 @@
+package Level3;
 import java.util.Scanner;
 
-class Butterfly {
+class RightPyramid {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("ENter the Number of rows: ");
+        System.out.println("Enter the Number of rows: ");
         int n = sc.nextInt();
         printPattern(n);
     }
@@ -14,21 +15,14 @@ class Butterfly {
             return;
         }
         int mid = n / 2 + 1;
-        int sStar = 1;
-        int eStar = n;
+        int star = 1;
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (j <= sStar || j >= eStar)
-                    System.out.print("* ");
-                else
-                    System.out.print("  ");
-            }
+            for (int j = 1; j <= star; j++)
+                System.out.print("* ");
             if (i < mid) {
-                sStar++;
-                eStar--;
+                star++;
             } else {
-                sStar--;
-                eStar++;
+                star--;
             }
             System.out.println();
         }

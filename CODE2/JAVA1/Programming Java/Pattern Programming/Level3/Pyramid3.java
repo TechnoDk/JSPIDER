@@ -1,6 +1,7 @@
+package Level3;
 import java.util.Scanner;
 
-class Pyramid1 {
+class Pyramid3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Number of rows: ");
@@ -15,7 +16,7 @@ class Pyramid1 {
             for (int j = 1; j <= space; j++)
                 System.out.print("  ");
             for (int j = 1; j <= star; j++)
-                System.out.print("*   ");
+                System.out.print(j + "   ");
             star++;
             space--;
             System.out.println();
