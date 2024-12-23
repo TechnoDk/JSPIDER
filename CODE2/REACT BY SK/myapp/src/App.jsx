@@ -9,24 +9,26 @@
 // import Footer from "./reactcss/Footer";
 // import Profile from "./images/Profile";
 // import ControlledForms1 from "./forms/ControlledForms1";
-
 // import ControlledForms2 from "./forms/ControlledForms2";
 // import ControlledForms1 from "./forms/ControlledForms2";
 // import TodoWrapper from "./todoApp/TodoWrapper";
 // import FlipkartNav from "./task1/FlipkartNav";
 // import RefExample from "./refs/RefExample";
 // import UncontrolledForms from "./forms/UncontrolledForms";
-import { useState } from "react";
+// import { useState } from "react";
 // import LifeCycle from "./lifecycle/LifeCycle";
 // import SideEffect from "./useEffect/SideEffect";
 // import SideEffect2 from "./useEffect/SideEffect2";
 // import FetchAPI from "./fetch/FetchAPI";
 // import TaskPhotos from "./Assignment/TaskPhotos";
 // import TasakTodos from "./Assignment/TasakTodos";
-import ContextParent from "./context/ContextParent";
+// import ContextParent from "./context/ContextParent";
+// import Users from "./context/Users";
+// import Context from "./context/Context";
+import Products from "./customHooks/Products";
 
 const App = () => {
-    let [toggle, setToggle] = useState(false);
+    // let [toggle, setToggle] = useState(false);
     return (
         <div>
            
@@ -61,7 +63,13 @@ const App = () => {
             {toggle? <SideEffect2 />: <SideEffect /> } */}
             {/* <TaskPhotos/> */}
             {/* <TasakTodos/> */}
-            <ContextParent/>
+            {/* <ContextParent /> */}
+            {/* <Context>
+                <Users/>
+            </Context>
+            */}
+            <Products/> 
+          
         </div>
     );
 
