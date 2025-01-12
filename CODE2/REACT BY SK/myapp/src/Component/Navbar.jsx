@@ -8,6 +8,10 @@ const Navbar = () => {
                 <li>Gallery</li>
                 <li>Contact</li>
                 <li>Dev</li>
+                <li>Devaa</li>
+
+
+
             </ul>
         </nav>
     );
